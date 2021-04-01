@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <title>World Wide Football</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-content"
+          aria-controls="navbar-content"
+          aria-expanded="false"
+          aria-label="toggle-navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">World Wide Football</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="livescore.html">Live Score</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="box">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+      </div>
+    </header>
+    <!--###################################-->
+    <iframe
+      src="https://www.scorebat.com/embed/"
+      frameborder="0"
+      width="600"
+      height="760"
+      allowfullscreen
+      allow="autoplay; fullscreen"
+      style="width: 600px; height: 760px; overflow: hidden; display: block"
+    ></iframe>
+    <script>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://www.scorebat.com/embed/embed.js?v=arrv";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "scorebat-jssdk");
+    </script>
+  </body>
+</html>
